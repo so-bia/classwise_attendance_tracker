@@ -1,0 +1,8 @@
+# Ignore C++ and platform files for language statistics
+windows/ linguist-vendored
+linux/ linguist-vendored
+macos/ linguist-vendored
+# You can also add specific extensions to be ignored
+*.h linguist-detectable=false
+*.cc linguist-detectable=false
+*.cpp linguist-detectable=false

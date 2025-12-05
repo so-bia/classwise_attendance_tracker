@@ -6,3 +6,13 @@ macos/ linguist-vendored
 *.h linguist-detectable=false
 *.cc linguist-detectable=false
 *.cpp linguist-detectable=false
+# Ignore common generated files and folders in Flutter for language statistics
+# This forces the calculation to primarily focus on Dart code in 'lib'
+windows/ linguist-vendored
+linux/ linguist-vendored
+macos/ linguist-vendored
+fuchsia/ linguist-vendored
+
+# Also specifically ignore CMake files in platform folders
+# The double asterisk (**) matches all files and subdirectories
+**/CMakeLists.txt linguist-vendored
